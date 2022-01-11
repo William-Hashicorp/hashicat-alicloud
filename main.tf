@@ -72,7 +72,7 @@ data "alicloud_images" "ubuntu" {
 
 resource "alicloud_eip_address" "hashicat" {
   bandwidth            = 1
-  address_name         = "tf-testAcc1234"
+  address_name         = ${var.cataddressname}
   isp                  = "BGP"
   internet_charge_type = "PayByBandwidth"
   payment_type         = "PayAsYouGo"
