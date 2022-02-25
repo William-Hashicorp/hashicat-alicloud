@@ -7,11 +7,12 @@
 
 variable "cataddressname" {
   description = "This is the eip address name to be used."
-  default     = "wycat-1234"
+  default     = "wycat-ali"
 }
 
 variable "prefix" {
   description = "This prefix will be included in the name of most resources."
+  default     = "wycat-ali"
 }
 
 variable "region" {
